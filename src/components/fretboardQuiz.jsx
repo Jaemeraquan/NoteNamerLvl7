@@ -2,30 +2,38 @@ import React, { useState } from "react";
 import './fretboardQuiz.css';
 export default function fretboardQuiz({
   questions,
+  returnToMainMenu,
   currentQuestion,
   setCurrentQuestion,
+  handleViewScoreClick,
   showScore,
   setShowScore,
   response,
+  selectedAnswer,
+  setSelectedAnswer,
   setResponse,
   play,
   isAnswered,
-  selectedAnswer,
-  setSelectedAnswer,
   setIsAnswered,
+  setIsAccidentalAnswered,
+  isAccidentalAnswered,
   setScore, // Pass the setScore function as a prop
   setQuestionCount, // Pass the setQuestionCount function as a prop
   percentageScore,
   setPercentageScore,
   getNextQuestion,
   handleAnswerOptionClick,
+  handleNoteAnswerOptionClick,
   restartQuiz,
   score, // Pass the score as a prop
-  questionCount, // Pass the questionCount as a 
-  startStaffQuiz, startFretboardQuiz, 
+  questionCount, // Pass the questionCount as a prop
+  startFretboardQuiz,
+  startStaffQuiz,
+  viewScoreText,
+  setViewScoreText,
   handleViewScoreHover,
   handleViewScoreLeave,
-  viewScoreText
+  clickedButton
 }) {
   const question = questions[currentQuestion];
   function getScore() {
@@ -53,19 +61,45 @@ export default function fretboardQuiz({
             </div>
           </div>
           <div className="answer-section">
-            {questions[currentQuestion].answerOptions.map((answerOption) => (
+            {questions[currentQuestion].answerOptions.map((answerOption, index) => (
               <button
               className={`answer key ${selectedAnswer === answerOption.answerText ? (answerOption.isCorrect ? 'correct-button' : 'incorrect-button') : ''}`}
+              key={index}
+              id="answer-button"
                 onClick={() => {
-                  handleAnswerOptionClick(answerOption.isCorrect);
+                  handleNoteAnswerOptionClick(answerOption.isCorrect);
                   setSelectedAnswer(answerOption.answerText); // Set the selected answer
                 }}
+
                 style={{
                   cursor: isAnswered ? "not-allowed" : "pointer", // Disable cursor if answered
                 }}
                 disabled={isAnswered} // Disable the button if answered
               >
                 {answerOption.answerText}
+              </button>
+            ))}
+            
+          </div>
+          <div className="answer-section">
+            {questions[currentQuestion].answerAccidental
+            .filter(accidental => accidental.answerAccidentalSymbol === "♯" || accidental.answerAccidentalSymbol === "♭")
+            .map((answerAccidental, accidentalIndex) => (
+              <button
+              className={`answer key ${selectedAnswer === answerAccidental.answerAccidentalSymbol ? (answerAccidental.iscorrect ? 'correct-button' : 'incorrect-button') : ''}`}
+              key={accidentalIndex}
+              id="answer-button"
+                onClick={() => {
+                  handleAnswerOptionClick(answerAccidental.iscorrect);
+                  setSelectedAnswer(answerAccidental.answerAccidentalSymbol); // Set the selected answer
+                }}
+
+                style={{
+                  cursor: !isAnswered ? "not-allowed" : "pointer", // Disable cursor if answered
+                }}
+                disabled={!isAnswered} // Disable the button if answered
+              >
+                {answerAccidental.answerAccidentalSymbol}
               </button>
             ))}
           </div>

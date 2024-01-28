@@ -65,13 +65,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: true },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: F1audio,
     answerHint: hintF1,
@@ -80,16 +81,17 @@ const originalQuestions = [
     questionImage: Bb,
     answerOptions: [
       { answerText: "A", isCorrect: false },
-      { answerText: "B", isCorrect: false },
+      { answerText: "B", isCorrect: true },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: true}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: true},
+      {answerAccidentalSymbol: "♮", iscorrect: false},
     ],
     answeraudio: Bbaudio,
     answerHint: hintBb,
@@ -101,13 +103,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: true },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: E1audio,
     answerHint: hintE1,
@@ -119,13 +122,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: true },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: Eaudio,
     answerHint: hintE,
@@ -137,31 +141,34 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: Aaudio,
     answerHint: hintA,
   },
   {
+    
     questionImage: C2,
     answerOptions: [
       { answerText: "A", isCorrect: false },
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: true },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: C2audio,
     answerHint: hintC2,
@@ -173,13 +180,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: true },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: D2audio,
     answerHint: hintD2,
@@ -191,13 +199,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: true },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: D1audio,
     answerHint: hintD1,
@@ -209,13 +218,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: true },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: true },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: G1audio,
     answerHint: hintG1,
@@ -227,13 +237,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: A1audio,
     answerHint: hintA1,
@@ -245,13 +256,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: true },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: B1audio,
     answerHint: hintB1,
@@ -263,13 +275,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: true },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: E2audio,
     answerHint: hintE2,
@@ -281,13 +294,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: true },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: F2audio,
     answerHint: hintF2,
@@ -299,13 +313,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: true },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: true },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: false},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: true},
     ],
     answeraudio: G2audio,
     answerHint: hintG2,
@@ -317,13 +332,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: true},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: true },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: true},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: false},
     ],
     answeraudio: Gsharp1audio,
     answerHint: hintGsharp1,
@@ -333,15 +349,16 @@ const originalQuestions = [
     answerOptions: [
       { answerText: "A", isCorrect: false },
       { answerText: "B", isCorrect: false },
-      { answerText: "C", isCorrect: false },
+      { answerText: "C", isCorrect: true },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
       { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: true},
-      { answerText: "F♯", isCorrect: false},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: true},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: false},
     ],
     answeraudio: Csharp2audio,
     answerHint: hintCsharp2,
@@ -353,13 +370,14 @@ const originalQuestions = [
       { answerText: "B", isCorrect: false },
       { answerText: "C", isCorrect: false },
       { answerText: "D", isCorrect: false },
-      { answerText: "G", isCorrect: false },
       { answerText: "E", isCorrect: false },
-      { answerText: "F", isCorrect: false },
-      { answerText: "C♯", isCorrect: false},
-      { answerText: "F♯", isCorrect: true},
-      { answerText: "G♯", isCorrect: false},
-      { answerText: "B♭", isCorrect: false}
+      { answerText: "F", isCorrect: true },
+      { answerText: "G", isCorrect: false },
+    ],
+    answerAccidental: [
+      {answerAccidentalSymbol: "♯", iscorrect: true},
+      {answerAccidentalSymbol: "♭", iscorrect: false},
+      {answerAccidentalSymbol: "♮", iscorrect: false},
     ],
     answeraudio: Fsharp2audio,
     answerHint: hintFsharp2,
@@ -374,6 +392,7 @@ export default function App() {
   const [response, setResponse] = useState(" ");
   const [play] = useSound(questions[currentQuestion].answeraudio);
   const [isAnswered, setIsAnswered] = useState(false);
+  const [isAccidentalAnswered, setIsAccidentalAnswered] = useState(false);
   const [askedQuestions, setAskedQuestions] = useState([]);
   const [score, setScore] = useState(0);
   const [questionCount, setQuestionCount] = useState(0);
@@ -396,27 +415,7 @@ export default function App() {
 document.documentElement.style.setProperty('--viewport-initial-scale', '1');
 
 
-useEffect(() => {
-  const shuffledQuestions = _.cloneDeep(originalQuestions);
 
-  shuffledQuestions.forEach((question) => {
-    const allOptions = [...question.answerOptions];
-    const correctAnswerIndex = allOptions.findIndex((option) => option.isCorrect);
-    allOptions.splice(correctAnswerIndex, 1); // Remove correct answer
-    shuffleArray(allOptions); // Shuffle incorrect options
-    
-    // Randomly select a position for the correct answer
-    const randomPosition = Math.floor(Math.random() * 5);
-    allOptions.splice(randomPosition, 0, question.answerOptions[correctAnswerIndex]);
-    
-    // Ensure there are only 6 options, even if correct answer was duplicated
-    question.answerOptions = allOptions.slice(0, 5);
-  });
-
-  shuffleArray(shuffledQuestions);
-  setQuestions(shuffledQuestions);
-  setAskedQuestions([]);
-}, []);
 
   function shuffleArray(array) {
     for (let i = 1; i < array.length; i++) {
@@ -429,7 +428,7 @@ useEffect(() => {
 
   // Event handler function to change the button text
   const handleViewScoreHover = () => {
-    setViewScoreText(`${score}/${questionCount} (${percentageScore.toFixed(0)}%)`);
+    setViewScoreText(`${percentageScore.toFixed(0)}%`);
   };
   
   // Event handler function to reset the button text when hover ends
@@ -441,6 +440,7 @@ useEffect(() => {
       setCurrentQuestion(currentQuestion + 1);
       setResponse(" ");
       setIsAnswered(false);
+      setIsAccidentalAnswered(false);
     } else {
       const shuffledQuestions = _.cloneDeep(originalQuestions);
       shuffleArray(shuffledQuestions);
@@ -448,34 +448,61 @@ useEffect(() => {
       setCurrentQuestion(0);
       setResponse(" ");
       setIsAnswered(false);
+      setIsAccidentalAnswered(false);
     }
   }
 
-
-  const handleAnswerOptionClick = (isCorrect) => {
+  const handleNoteAnswerOptionClick = (isCorrect) => {
+    const hasCorrectAccidental = questions[currentQuestion].answerAccidental.some(
+      (accidental) => accidental.answerAccidentalSymbol === "♮" && accidental.iscorrect === true
+    );
     if (isCorrect) {
-    //   const randomMessage = responseMessages[Math.floor(Math.random() * responseMessages.length)];
-    // setResponse(randomMessage);
-    //   document.getElementById("response").style.color = "green";
-    //   document.getElementById("response").style.color = "green";
+      if (hasCorrectAccidental)
+      {
+        console.log("Playing audio:", questions[currentQuestion].answeraudio);
+        console.log("play function:", play); // Check if play is defined
+          console.log(questions[currentQuestion].answeraudio);
+            play(questions[currentQuestion].answeraudio); // Use the regular play function
+          setIsAccidentalAnswered(true);
+          setTimeout(() => {
+            getNextQuestion();
+            setSelectedAnswer(null)
+          }, 1500);
+          setScore(score + 1);
+          setQuestionCount(questionCount + 1);
+          const newPercentageScore = ((score + 1) / (questionCount + 1)) * 100;
+          setPercentageScore(newPercentageScore);
+        }
+        else{
+      setIsAnswered(true);
+      setScore(score + 1);
+    setQuestionCount(questionCount + 1);
+    const newPercentageScore = ((score + 1) / (questionCount + 1)) * 100;
+    setPercentageScore(newPercentageScore);}
+    } else {
+      setQuestionCount(questionCount + 1);
+      const newPercentageScore = (score / (questionCount + 1)) * 100;
+      setPercentageScore(newPercentageScore);
+    }
+  }
+
+  const handleAnswerOptionClick = (iscorrect) => {
+
+    if (iscorrect) {
     console.log("Playing audio:", questions[currentQuestion].answeraudio);
     console.log("play function:", play); // Check if play is defined
       console.log(questions[currentQuestion].answeraudio);
         play(questions[currentQuestion].answeraudio); // Use the regular play function
-  
-      setIsAnswered(true);
+      setIsAccidentalAnswered(true);
       setTimeout(() => {
         getNextQuestion();
         setSelectedAnswer(null)
-      }, 3000);
+      }, 1500);
       setScore(score + 1);
       setQuestionCount(questionCount + 1);
       const newPercentageScore = ((score + 1) / (questionCount + 1)) * 100;
       setPercentageScore(newPercentageScore);
     } else {
-    //   const randomMessage = wrongResponseMessages[Math.floor(Math.random() * wrongResponseMessages.length)];
-    // setResponse(randomMessage);
-    //   document.getElementById("response").style.color = "red";
       setQuestionCount(questionCount + 1);
       const newPercentageScore = (score / (questionCount + 1)) * 100;
       setPercentageScore(newPercentageScore);
@@ -489,6 +516,7 @@ useEffect(() => {
     setShowScore(false);
     setResponse(" ");
     setIsAnswered(false);
+    setIsAccidentalAnswered(false);
     setScore(0);
     setQuestionCount(0);
     setPercentageScore(0);
@@ -515,7 +543,9 @@ useEffect(() => {
           setResponse={setResponse}
           play={play}
           isAnswered={isAnswered}
+          isAccidentalAnswered={isAccidentalAnswered}
           setIsAnswered={setIsAnswered}
+          setIsAccidentalAnswered={setIsAccidentalAnswered}
           score={score}
           setScore={setScore}
           questionCount={questionCount}
@@ -524,6 +554,7 @@ useEffect(() => {
           setPercentageScore={setPercentageScore}
           getNextQuestion={getNextQuestion}
           handleAnswerOptionClick={handleAnswerOptionClick}
+          handleNoteAnswerOptionClick={handleNoteAnswerOptionClick}
           selectedAnswer={selectedAnswer}
           setSelectedAnswer={setSelectedAnswer}
           restartQuiz={restartQuiz}
@@ -532,33 +563,36 @@ useEffect(() => {
         />
       ) : showFretboardQuiz ? (
         <FretBoardQuiz
-          questions={questions}
-          currentQuestion={currentQuestion}
-          handleViewScoreHover={handleViewScoreHover}
-          handleViewScoreLeave={handleViewScoreLeave}
-          viewScoreText={viewScoreText}
-          setViewScoreText={viewScoreText}
-          setCurrentQuestion={setCurrentQuestion}
-          selectedAnswer={selectedAnswer}
-          setSelectedAnswer={setSelectedAnswer}
-          showScore={showScore}
-          setShowScore={setShowScore}
-          response={response}
-          setResponse={setResponse}
-          play={play}
-          isAnswered={isAnswered}
-          setIsAnswered={setIsAnswered}
-          score={score}
-          setScore={setScore}
-          questionCount={questionCount}
-          setQuestionCount={setQuestionCount}
-          percentageScore={percentageScore}
-          setPercentageScore={setPercentageScore}
-          getNextQuestion={getNextQuestion}
-          handleAnswerOptionClick={handleAnswerOptionClick}
-          restartQuiz={restartQuiz}
-          startStaffQuiz={startStaffQuiz}
-          startFretboardQuiz={startFretboardQuiz}
+        questions={questions}
+        currentQuestion={currentQuestion}
+        setCurrentQuestion={setCurrentQuestion}
+        showScore={showScore}
+        setShowScore={setShowScore}
+        viewScoreText={viewScoreText}
+        setViewScoreText={viewScoreText}
+        handleViewScoreHover={handleViewScoreHover}
+        handleViewScoreLeave={handleViewScoreLeave}
+        response={response}
+        setResponse={setResponse}
+        play={play}
+        isAnswered={isAnswered}
+        isAccidentalAnswered={isAccidentalAnswered}
+        setIsAnswered={setIsAnswered}
+        setIsAccidentalAnswered={setIsAccidentalAnswered}
+        score={score}
+        setScore={setScore}
+        questionCount={questionCount}
+        setQuestionCount={setQuestionCount}
+        percentageScore={percentageScore}
+        setPercentageScore={setPercentageScore}
+        getNextQuestion={getNextQuestion}
+        handleAnswerOptionClick={handleAnswerOptionClick}
+        handleNoteAnswerOptionClick={handleNoteAnswerOptionClick}
+        selectedAnswer={selectedAnswer}
+        setSelectedAnswer={setSelectedAnswer}
+        restartQuiz={restartQuiz}
+        startStaffQuiz={startStaffQuiz}
+        startFretboardQuiz={startFretboardQuiz}
         />
         ) : null}
     </div>

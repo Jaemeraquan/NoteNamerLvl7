@@ -15,12 +15,15 @@ export default function staffQuiz({
   play,
   isAnswered,
   setIsAnswered,
+  setIsAccidentalAnswered,
+  isAccidentalAnswered,
   setScore, // Pass the setScore function as a prop
   setQuestionCount, // Pass the setQuestionCount function as a prop
   percentageScore,
   setPercentageScore,
   getNextQuestion,
   handleAnswerOptionClick,
+  handleNoteAnswerOptionClick,
   restartQuiz,
   score, // Pass the score as a prop
   questionCount, // Pass the questionCount as a prop
@@ -68,7 +71,7 @@ export default function staffQuiz({
               key={index}
               id="answer-button"
                 onClick={() => {
-                  handleAnswerOptionClick(answerOption.isCorrect);
+                  handleNoteAnswerOptionClick(answerOption.isCorrect);
                   setSelectedAnswer(answerOption.answerText); // Set the selected answer
                 }}
 
@@ -78,6 +81,28 @@ export default function staffQuiz({
                 disabled={isAnswered} // Disable the button if answered
               >
                 {answerOption.answerText}
+              </button>
+            ))}
+          </div>
+          <div className="answer-section">
+            {questions[currentQuestion].answerAccidental
+            .filter(accidental => accidental.answerAccidentalSymbol === "♯" || accidental.answerAccidentalSymbol === "♭")
+            .map((answerAccidental, accidentalIndex) => (
+              <button
+              className={`answer key ${selectedAnswer === answerAccidental.answerAccidentalSymbol ? (answerAccidental.iscorrect ? 'correct-button' : 'incorrect-button') : ''}`}
+              key={accidentalIndex}
+              id="answer-button"
+                onClick={() => {
+                  handleAnswerOptionClick(answerAccidental.iscorrect);
+                  setSelectedAnswer(answerAccidental.answerAccidentalSymbol); // Set the selected answer
+                }}
+
+                style={{
+                  cursor: !isAnswered ? "not-allowed" : "pointer", // Disable cursor if answered
+                }}
+                disabled={!isAnswered} // Disable the button if answered
+              >
+                {answerAccidental.answerAccidentalSymbol}
               </button>
             ))}
           </div>
